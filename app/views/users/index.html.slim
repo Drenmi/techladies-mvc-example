@@ -1,0 +1,14 @@
+h1 Users
+
+table
+  thead
+    tr
+      th Name
+      th Actions
+
+  tbody
+
+  - @users.each do |user|
+    tr
+      td #{user.first_name}
+      td #{link_to 'View', user_path(user)} - #{link_to 'Tweets', user_tweets_path(user)}

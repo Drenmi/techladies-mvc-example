@@ -1,0 +1,8 @@
+h1 #{@user.first_name}'s Tweets
+
+table
+  tbody
+
+  - @tweets.each do |tweet|
+    tr
+      td #{tweet.text}
